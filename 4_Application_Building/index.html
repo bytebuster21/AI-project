@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNAPSESCAN_AI_DRIVEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">SYNAPSESCAN_AI_DRIVEN</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-content">
+            <h1>SynapScan_classification_Of_OvarianCancer_Variants</h1>
+            <p>A Smart Approach to Ovarian Variant Diagnosis using AI</p>
+
+        <!-- Upload Section Starts Here -->
+            <div class="upload-section">
+                <h2>Upload a Scan</h2>
+                    <form action="/predict" method="post" enctype="multipart/form-data" class="upload-form">
+                        <input type="file" name="file" required>
+                        <button type="submit">Predict</button>
+                    </form>
+                    {% if prediction %}
+                    <div class="prediction-result">
+                        <h3>Prediction Result</h3>
+                        <p>{{ prediction }}</p>
+                    </div>
+                    {% endif %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

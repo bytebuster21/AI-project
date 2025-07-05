@@ -1,1 +1,2 @@
 *.h5 filter=lfs diff=lfs merge=lfs -text
+4_Application_Building/resnet50_synapsescan.h5 filter=lfs diff=lfs merge=lfs -text
